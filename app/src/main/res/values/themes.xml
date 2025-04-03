@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SSM" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Màu chính -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Màu phụ -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Màu status bar -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+
+        <!-- Font + nền -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <!-- Theme không có ActionBar -->
+    <style name="Theme.SSM.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
+    <!-- Overlay cho AppBar nếu bạn dùng Toolbar -->
+    <style name="Theme.SSM.AppBarOverlay" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <!-- Overlay cho Popup (menu, dialog, spinner...) -->
+    <style name="Theme.SSM.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chi tiết chi tiêu"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ngày:"
+            android:textColor="#757575"/>
+
+        <TextView
+            android:id="@+id/tv_transaction_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10/03/2023"
+            android:textSize="14sp"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <!-- Category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Danh mục:"
+            android:textColor="#757575"/>
+
+        <TextView
+            android:id="@+id/tv_transaction_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ăn uống"
+            android:textSize="14sp"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <!-- Amount -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Số tiền:"
+            android:textColor="#757575"/>
+
+        <TextView
+            android:id="@+id/tv_transaction_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-50,000đ"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"/>
+    </LinearLayout>
+
+    <!-- Note -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú:"
+            android:textColor="#757575"/>
+
+        <TextView
+            android:id="@+id/tv_transaction_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ăn trưa cùng đồng nghiệp"
+            android:textSize="14sp"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đóng"
+        android:backgroundTint="#3F51B5"/>
+
+</LinearLayout> 

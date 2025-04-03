@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SSM</string>
+    <string name="navigation_drawer_open">Mở ngăn điều hướng</string>
+    <string name="navigation_drawer_close">Đóng ngăn điều hướng</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Tiêu đề điều hướng</string>
+    <string name="action_settings">Cài đặt</string>
+
+    <string name="full_name">Họ và tên</string>
+    <string name="fab_desc">Gửi email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="address">Địa chỉ</string>
+    <string name="dob">Ngày sinh</string>
+    <string name="gender">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="role">Vai trò (admin/học sinh)</string>
+    <string name="register">Đăng ký</string>
+
+    <string name="menu_dashboard">Bảng điều khiển</string>
+    <string name="menu_add_spending">Thêm chi tiêu</string>
+    <string name="menu_statistics">Thống kê</string>
+    <string name="menu_settings">Cài đặt</string>
+    <string name="menu_user_management">Quản lý người dùng</string>
+    <string name="menu_logout">Đăng xuất</string>
+    <string name="menu_chat">Trò chuyện với AI</string>
+
+    <string name="email">Email</string>
+    <string name="login">Đăng nhập</string>
+    <string name="register_link">Chưa có tài khoản? Đăng ký tại đây</string>
+    <string name="forgot_password_link">Quên mật khẩu?</string>
+    <string name="admin_section">Khu vực Admin</string>
+    <string name="account">Tài khoản</string>
+    
+    <!-- Chat strings -->
+    <string name="chat_hint">Nhập câu hỏi của bạn...</string>
+    <string name="chat_send">Gửi</string>
+    <string name="chat_empty">Bắt đầu cuộc trò chuyện với trợ lý AI!</string>
+    <string name="chat_error">Có lỗi xảy ra. Vui lòng thử lại sau.</string>
+    <string name="chat_thinking">Đang suy nghĩ...</string>
+    <string name="clear_chat_history">Xóa lịch sử trò chuyện</string>
+    <string name="clear_chat_confirm">Bạn có chắc chắn muốn xóa toàn bộ lịch sử trò chuyện?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="chat_cleared">Lịch sử trò chuyện đã được xóa</string>
+
+</resources>
