@@ -1,0 +1,42 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#7E4BE6</color>
+    <color name="purple_700">#5B6EF7</color>
+    <color name="teal_200">#B755D3</color>
+    <color name="teal_700">#7E4BE6</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorIncome">#2E7D32</color>
+    <color name="colorExpense">#C62828</color>
+    <color name="colorPrimary">#30A0D1</color>
+    <color name="colorPrimaryLight">#00CCCC</color>
+    <color name="galaxy_blue">#0000CC</color>
+    
+    <!-- Màu mới cho giao diện -->
+    <color name="colorBackground">#7E4BE6</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextSecondary">#E0E0E0</color>
+    <color name="colorCategorySelected">#B755D3</color>
+    <color name="colorCategoryBorder">#5B6EF7</color>
+    <color name="colorAccent">#41E1E4</color>
+    <color name="colorSaveButton">#5B6EF7</color>
+    <color name="colorIconTint">#FFFFFF</color>
+    
+    <!-- Màu cho gradient blue background -->
+    <color name="gradient_blue_start">#41E1E4</color>
+    <color name="gradient_blue_center">#30A0D1</color>
+    <color name="gradient_blue_end">#1A237E</color>
+    
+    <!-- Cập nhật màu chính -->
+    <color name="colorPrimaryDark">#1A237E</color>
+    
+    <!-- Cập nhật màu cho giao diện mới -->
+    <color name="card_background">@android:color/white</color>
+    <color name="text_color">@android:color/black</color>
+    <color name="button_background">@android:color/black</color>
+    <color name="input_background">@android:color/white</color>
+    
+    <!-- Màu cho biểu tượng danh mục -->
+    <color name="icon_tint_black">@android:color/black</color>
+</resources>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">CampusExpense Management</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="full_name">Full Name</string>
+    <string name="fab_desc">Send email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="dob">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="role">Role (admin/student)</string>
+    <string name="register">Register</string>
+
+    <string name="menu_dashboard">CampusExpense Management</string>
+    <string name="menu_add_spending">Add Expense</string>
+    <string name="menu_statistics">Statistics</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_user_management">User Management</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_chat">Chat with AI</string>
+
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="register_link">Don\'t have an account? Register here</string>
+    <string name="forgot_password_link">Forgot password?</string>
+    <string name="admin_section">Admin Section</string>
+    <string name="account">Account</string>
+    
+    <!-- Chat strings -->
+    <string name="chat_hint">Enter your question...</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_empty">Start a conversation with the AI assistant!</string>
+    <string name="chat_error">An error occurred. Please try again later.</string>
+    <string name="chat_thinking">Thinking...</string>
+    <string name="clear_chat_history">Clear chat history</string>
+    <string name="clear_chat_confirm">Are you sure you want to clear all chat history?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="chat_cleared">Chat history has been cleared</string>
+    
+    <!-- Add spending strings -->
+    <string name="add_transaction_title">Add New Transaction</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="note">Note (optional)</string>
+    <string name="categories">Categories</string>
+    <string name="save_transaction">Save Transaction</string>
+    
+    <!-- Category names - expense -->
+    <string name="category_food">Food</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_health">Healthcare</string>
+    <string name="category_education">Education</string>
+    <string name="category_housing">Housing</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_cafe">Cafe &amp; Tea</string>
+    <string name="category_utilities">Utilities</string>
+    
+    <!-- Category names - income -->
+    <string name="category_salary">Salary</string>
+    <string name="category_investment">Investment</string>
+    <string name="category_gift">Gift</string>
+    <string name="category_scholarship">Scholarship</string>
+    <string name="category_sales">Sales</string>
+    <string name="category_bonus">Bonus</string>
+    <string name="category_loan">Loan</string>
+    <string name="category_refund">Refund</string>
+    <string name="category_part_time">Part-time</string>
+    <string name="category_service">Services</string>
+
+    <!-- Dashboard strings -->
+    <string name="monthly_budget">Monthly Budget</string>
+    <string name="used_budget_percentage">Used %d%% of budget</string>
+    <string name="no_transactions">No transactions this month</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="add_budget">Add budget</string>
+</resources>

@@ -1,0 +1,120 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.yourname.ssm'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.yourname.ssm"
+        minSdk 27
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        
+        // Lấy API key từ gradle.properties hoặc sử dụng giá trị mặc định nếu không có
+        buildConfigField "String", "OPENAI_API_KEY", "\"${project.findProperty('openai.api.key') ?: ''}\""
+        
+        // Hỗ trợ nhiều màn hình với thiết kế tương ứng
+        vectorDrawables.useSupportLibrary = true
+        
+        // Bỏ qua native filters để giảm kích thước APK và tăng tốc độ build
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            
+            // Tối ưu hóa dung lượng APK
+            zipAlignEnabled true
+            
+            // Vô hiệu hóa tạo file mapping.txt
+            crunchPngs false
+        }
+        debug {
+            debuggable true // Bật debug để tìm lỗi
+            minifyEnabled false 
+            zipAlignEnabled true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    lint {
+        abortOnError false
+        baseline file("lint-baseline.xml")
+    }
+    
+    // Tối ưu hoá image
+    aaptOptions {
+        cruncherEnabled = false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Sử dụng AndroidX Lifecycle với phiên bản mới nhất
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+    
+    // Navigation - sử dụng phiên bản cao nhất có sẵn
+    implementation 'androidx.navigation:navigation-fragment:2.7.5'
+    implementation 'androidx.navigation:navigation-ui:2.7.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    
+    // Authentication libraries
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+    
+    // JavaMail API
+    implementation 'com.sun.mail:android-mail:1.6.5'
+    implementation 'com.sun.mail:android-activation:1.6.5'
+    
+    // SQLite support - sử dụng phiên bản nhẹ hơn
+    implementation 'androidx.sqlite:sqlite-framework:2.3.1'
+    
+    // CircleImageView - hiệu quả và nhẹ
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    
+    // MPAndroidChart - thư viện biểu đồ
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    
+    // Retrofit for API calls
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
+    
+    // Glide for image loading
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    
+    // Image display and zooming
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    // RecyclerView and CardView
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:3.12.4'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'org.mockito:mockito-android:3.12.4'
+} 

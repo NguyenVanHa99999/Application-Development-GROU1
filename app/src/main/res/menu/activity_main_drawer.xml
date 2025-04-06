@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_menu_dashboard"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/addSpending"
+            android:icon="@drawable/ic_menu_add_spending"
+            android:title="@string/menu_add_spending" />
+        <item
+            android:id="@+id/statistics"
+            android:icon="@drawable/ic_menu_statistics"
+            android:title="@string/menu_statistics" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_menu_chat"
+            android:title="@string/menu_chat" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/menu_settings" />
+    </group>
+
+    <item android:title="@string/admin_section">
+        <menu>
+            <item
+                android:id="@+id/userManagement"
+                android:icon="@drawable/ic_menu_user_management"
+                android:title="@string/menu_user_management" />
+        </menu>
+    </item>
+
+    <item android:title="@string/account">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

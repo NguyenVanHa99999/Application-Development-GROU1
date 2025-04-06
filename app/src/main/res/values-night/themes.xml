@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme in night mode. -->
+    <style name="Theme.CampusExpense" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/galaxy_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/galaxy_blue</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.CampusExpense.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
+    <!-- Overlay cho AppBar nếu bạn dùng Toolbar -->
+    <style name="Theme.CampusExpense.AppBarOverlay" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <!-- Overlay cho Popup (menu, dialog, spinner...) -->
+    <style name="Theme.CampusExpense.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/header_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/nav_header_desc"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#00000000"
+        android:src="@drawable/ic_admin_avatar" />
+
+    <TextView
+        android:id="@+id/header_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="@string/nav_header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/header_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: 0"
+        android:textColor="#E6FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_subtitle" />
+
+    <TextView
+        android:id="@+id/header_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role: Unknown"
+        android:textColor="#E6FFFFFF"
+        android:textSize="12sp" />
+</LinearLayout>
